@@ -1,0 +1,27 @@
+<div class="MainNav">
+    <div class="icon">
+        <div class="menu">
+            <button class="menu" @click="MenuActive=!MenuActive">
+                <span class="">menu</span>
+              </button>
+        </div>
+        <img src="http://placeimg.com/120/100/fashion" alt="">
+        <router-link  to="/" class="head-nav-tx">購物車</router-link>
+    </div>
+    <div class="container" :class='{active:MenuActive}'>
+        <div class="space">|</div>
+        <center><hr ></center>
+        <router-link to="/" class="nav-tx">品牌故事</router-link>
+        <center><hr ></center>
+        <div class="space">|</div>
+        <router-link to="/about" class="nav-tx">口碑肯定</router-link>
+        <center><hr ></center>
+        <div class="space">|</div>
+        <router-link to="/" class="nav-tx">搶先擁有</router-link>
+        <center><hr ></center>
+        <div class="space">|</div>
+        <router-link to="/" class="nav-tx">購物車</router-link>  
+    </div>
+    
+    <div class="menu-back" :class='{active:MenuActive}'></div>
+</div>
