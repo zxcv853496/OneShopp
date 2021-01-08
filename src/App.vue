@@ -7,6 +7,8 @@
     <profile :profile="profile"></profile>
     <button @click="login" v-if="!authorized">Login</button>
     <button @click="logout" v-else>Logout</button>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <a href="#" onclick="signOut();">Sign out</a>
   </div>
 </template>
 
@@ -126,7 +128,7 @@ export default {
       window.FB.api('/me?fields=name,id,email', function (response) {
         vm.$set(vm, 'profile', response)  //監控 profile
       })
-    }
+    },
   }
 }
 </script>
