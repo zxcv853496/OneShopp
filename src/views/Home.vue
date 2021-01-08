@@ -2,13 +2,13 @@
   <div class="home">
     <div class="section1">
       <div class="banner">
-        <img src="http://placeimg.com/640/480/sports" alt="">
+        <img src="http://placeimg.com/800/800/sports" alt="">
       </div>
       <div class="banner">
-        <img src="http://placeimg.com/640/480/technics" alt="">
+        <img src="http://placeimg.com/800/800/technics" alt="">
       </div>
       <div class="banner">
-        <img src="http://placeimg.com/640/480/cats" alt="">
+        <img src="http://placeimg.com/800/800/cats" alt="">
       </div>
     </div>
     <div class="section2">
@@ -66,3 +66,4 @@ export default {
   }
 }
 </script>
+
